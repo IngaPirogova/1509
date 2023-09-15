@@ -1,0 +1,123 @@
+/*Футер Подпишитесь на рассылку*/
+
+.subscribe-form {
+    @media screen and (min-width: 768px) {
+    margin-top: 60px;
+}
+  @media screen and (min-width: 1200px) {
+   margin-left: auto;}
+}
+
+.subscribe-form__field {
+    display: flex;
+    flex-direction: column;
+    @extend %centeredFlex;
+
+@media screen and (min-width: 1200px) {
+    flex-direction: row;
+}
+}
+
+.subscribe-form__text {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $accent-text-color;
+    text-align: center;
+    @extend %removeMargin;
+
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
+}
+
+.subscribe-form__lable {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.subscribe-form__input {
+    width: 100%;
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    font-family: inherit;
+    background-color: $accent-bg-color;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+   @media screen and (min-width: 480px) {
+    min-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+    @media screen and (min-width: 1200px) {
+            min-width: 358px;
+        }
+    }
+            
+
+.subscribe-form__button {
+   @extend %centeredFlex;
+    
+    width: 100%;
+    height: auto;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $accent-text-color;
+    background: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    border-radius: 4px;
+    border-color: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus {
+        color: $accent-text-color;
+        background-color: $accent-color;
+        cursor: pointer;
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 200px;
+        min-height: 100%;
+        
+}
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+        margin-top: 0;}
+}
+
+
+.subscribe-form__send {
+    margin-left: 10px;
+}
